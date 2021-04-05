@@ -1,0 +1,6 @@
+1. Currency exchange calculator. You are on the amazon page. 
+The goal is to take the dollar amount, send it to the back-end, use the currency exchange rate API, 
+convert dollar amount to Great British Pounds (gbp) and return back the result, 
+replace the dollar amount with gbp amount in content.
+
+https://www.freeforexapi.com/api/live?pairs=USDGBP

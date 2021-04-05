@@ -1,0 +1,2 @@
+1. Create a login popup, that will imitate the loading for 1 second when opened, then show a login form. 
+   Hard-code some credentials for validation to make them imitate the real sign in form.

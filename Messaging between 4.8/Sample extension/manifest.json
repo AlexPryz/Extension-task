@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Price divider by 2",
+  "description": "This extension divides price on amazon product web page by 2. Task 4.8",
+  "version": "1.0.0",
+  "background": {
+    "scripts": ["./js/config.js", "./js/jquery.min.js", "./js/core.js", "./js/rss-parser.min.js", "./js/background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon-32.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.amazon.com/*"],
+      "js": ["./js/jquery.min.js", "./js/core.js", "./js/config.js", "./js/content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "storage",
+    "notifications"
+  ]
+}

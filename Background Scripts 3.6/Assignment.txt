@@ -1,0 +1,2 @@
+1. Track how many seconds passed since the installation till the moment the user uninstall the extension.
+2. Open a new tab google.com with a [seconds] param in the url on uninstall

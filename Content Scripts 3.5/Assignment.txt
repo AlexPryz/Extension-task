@@ -1,0 +1,4 @@
+1. On the LinkedIn profile page (https://www.linkedin.com/in/anyprofilenickname) get the profile first name and last name 
+   and write them to console.
+2. Add text 'Just for test' to the first name and the last name and insert it back to the node element, 
+   so it would look like that: "Oleksii Luppa Just for test".

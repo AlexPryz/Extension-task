@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "name": "My first extension",
+  "description": "This is first task from lesson 3.4 Basics",
+  "version": "1.0.0",
+  "background": {
+    "scripts": ["./js/jquery.min.js", "./js/core.js","./js/config.js","./js/background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon-32.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://en.wikipedia.org/*"],
+      "js": [ "./js/jquery.min.js","./js/core.js", "./js/config.js", "./js/content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "https://www.upwork.com/*",
+    "storage",
+    "notifications"
+  ]
+}

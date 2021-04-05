@@ -1,0 +1,5 @@
+1. Create a basic extension setup, name the extension and add description.
+2. Connect files 'background.js', 'core.js', 'jquery.min.js' and 'config.js' to the background and 
+   files 'content.js', 'core.js', 'jquery.min.js' and 'config.js' to the contect with match https://en.wikipedia.org/ 
+   in the correct order.
+3. Install extension to the chrome.

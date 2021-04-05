@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+  "name": "Currency change extension",
+  "description": " It takes the dollar price from the page and set it to GBP. Task 4.10",
+  "version": "1.0.0",
+  "background": {
+    "scripts": ["./js/config.js", "./js/jquery.min.js", "./js/core.js", "./js/rss-parser.min.js", "./js/background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "images/icon-32.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["./js/jquery.min.js", "./js/core.js", "./js/config.js", "./js/content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "storage"
+  ]
+}
